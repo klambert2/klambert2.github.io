@@ -1,12 +1,21 @@
-/**
+/*
  * index.scss
  * any styles you want here!
  */
+
+:root {
+	--color-primary: #556B2F;
+	--color-secondary: #D1AA24;
+ 	--color-tertiary: #251E24;
+	--color-dark: #352C27;
+	--color-light: #EDE8E5;
+}
 
 body {
 	background: #f8f8f8;
 	font-family: "arial";
 	text-align: center;
+	width: 95%;
 }
 
 header {
