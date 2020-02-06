@@ -12,10 +12,11 @@
 }
 
 body {
-	background: #f8f8f8;
+	background: var(--color-light);
 	font-family: "arial";
 	text-align: center;
 	width: 95%;
+	color: var(--color-dark);
 }
 
 header {
@@ -28,9 +29,15 @@ nav {
 }
 
 nav a {
-	color: purple;
+	color: var(--color-primary);
+	font-weight: bold;
 	text-decoration: none;
 	padding: 0 1em;
+}
+
+li {
+	list-style: none;
+	text-align: center;
 }
 
 #selfie {
