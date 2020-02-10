@@ -20,6 +20,8 @@ body {
 	text-align: center;
 	width: 95%;
 	color: var(--color-dark);
+	margin: 0;
+	overflow-x: hidden;
 }
 
 header {
@@ -39,12 +41,15 @@ nav a {
 	padding: 0 1em;
 }
 
+main {
+	display: block;
+}
 
 #heroBanner {
 	background-color: var(--color-primary);
 	border-radius: 1em;
 	max-width: 70em;
-	margin: auto;
+	margin: 5em auto;
 }
 
 #heroBanner h1 {
@@ -94,7 +99,7 @@ nav a {
 	justify-content: center;
 	align-items: center;
 	max-width: 70em;
-	margin: auto;
+	margin: 5em auto;
 }
 
 #projects section {
@@ -110,7 +115,7 @@ nav a {
 	color: var(--color-light);
 	border-radius: 1em;
 	max-width: 70em;
-	margin: auto;
+	margin: 5em auto;
 	padding: 1em;
 }
 
@@ -144,4 +149,26 @@ li {
 
 #logo {
 	height: 5em;
+}
+
+footer {
+	display: block;
+	background: var(--color-tertiary);
+	color: var(--color-light);
+	padding: 2em;
+	width: 100%;
+}
+
+footer a {
+	color: var(--color-light);
+	text-decoration: none;
+	margin: 1.5em 1em;
+	padding: .5em 1em;
+	border-radius: .25em;
+}
+
+footer a:hover {
+	color: var(--color-secondary);
+	font-weight: bold;
+	background: var(--color-light);
 }
