@@ -1,0 +1,147 @@
+/*
+ * index.scss
+ * any styles you want here!
+ */
+ @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+:root {
+	--color-primary: #556B2F;
+	--color-secondary: #D1AA24;
+ 	--color-tertiary: #251E24;
+	--color-dark: #352C27;
+	--color-light: #fff;
+	--font-primary: "PT Sans";
+	--font-secondary: "Lato";
+}
+
+body {
+	background: var(--color-light);
+	font-family: var(--font-secondary);
+	text-align: center;
+	width: 95%;
+	color: var(--color-dark);
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+}
+
+nav {
+	align-self: center;
+	margin-left: auto;
+}
+
+nav a {
+	color: var(--color-primary);
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 1em;
+}
+
+
+#heroBanner {
+	background-color: var(--color-primary);
+	border-radius: 1em;
+	max-width: 70em;
+	margin: auto;
+}
+
+#heroBanner h1 {
+	color: var(--color-light);
+	font-family: var(--font-primary);
+	font-size: 3em;
+	padding: 1em;
+	text-align: left;
+	font-weight: lighter;
+}
+
+#picAndName {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 1em;
+	padding: 1em;
+	padding-bottom: 2em;
+}
+
+#words {
+	margin-left: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-items: flex-start;
+	color: var(--color-light);
+	font-family: var(--font-primary);
+}
+
+#words h3 {
+	font-size: 1.8em;
+	margin-bottom: .25em;
+}
+
+#words h5 {
+	font-weight: normal;
+	font-size: 1em;
+	margin-top: .25em;
+	color: rgb(218, 214, 214);
+}
+
+#projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	max-width: 70em;
+	margin: auto;
+}
+
+#projects section {
+	/* testing css */
+	background: var(--color-tertiary);
+	color: var(--color-light);
+	margin: .5em;
+	padding: 1em;
+}
+
+#experience {
+	background: var(--color-primary);
+	color: var(--color-light);
+	border-radius: 1em;
+	max-width: 70em;
+	margin: auto;
+	padding: 1em;
+}
+
+#work {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#work section {
+	width: 30%;
+	margin: .1em;
+	background: var(--color-tertiary);
+}
+
+.large {
+	flex-grow: 2;
+}
+
+
+li {
+	list-style: none;
+	text-align: center;
+}
+
+#selfie {
+	height: 14em;
+	border-radius: 50%;
+}
+
+#logo {
+	height: 5em;
+}

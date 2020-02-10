@@ -1,53 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
 
-		<!--  Meta  -->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Kayla Lambert Design</title>
+<head>
+	<!--  Meta  -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kayla Lambert Design</title>
 
-		<!--  Styles  -->
-		<link rel="stylesheet" href="index.css">
+	<!--  Styles  -->
+	<link rel="stylesheet" href="./css/index.css">
 
-		<!-- Scripts -->
-		<script src="index.js"></script>
-	</head>
+	<!-- Scripts -->
+	<script src="./js/index.js"></script>
+</head>
 
 
-	<body>
-		
-		<header>
-			<img src="http://placehold.it/50" alt="logo">
-			<nav>
-				<a href="#">About</a>
-				<a href="#">Projects</a>
-				<a href="#">Contact</a>
-			</nav>
-		</header>
-		
-		<main>
-			<h2>Kayla Lambert</h2>
-			<img id="selfie" src="./me.png" alt="My face">
-			<p>I'm 22 and in my last year (hopefully) at Eastern Washington University 
-				getting a degree in Computer Science with a major in Management Information 
-				Systems. I'm hoping to go into front-end web development in the future if 
-				possible. I really like animals and have a tiny zoo going on in my room as 
-				I've a snake, two geckos, a lizard, and a bird.</p>
-			<p>Descriptors</p>
-			<ul>
-				<li>Coffee Addict</li>
-				<li>Travel Lover</li>
-				<li>Low-Key Animal Hoarder (but not really)</li>
-				<li>Doesn't understand time</li>
-				<li>Just straight vibin'</li>
-			</ul>
-		</main>
+<body>
 
-		<footer>
-			<a href="./README.md">Read Me!</a>
-		</footer>
-		
-	</body>
+	<header>
+		<img id="logo" src="./img/logo.png" alt="logo">
+		<nav>
+			<a href="#">About</a>
+			<a href="#">Projects</a>
+			<a href="#">Contact</a>
+		</nav>
+	</header>
+
+	<main>
+		<section id="heroBanner">
+			<h1>Hiya! I'm a future EWU grad with a
+				passion for software development and
+				web design.</h1>
+			<div id="picAndName">
+				<img id="selfie" src="./img/me.png" alt="My face">
+				<div id="words">
+					<h3>Kayla Lambert</h3>
+					<h5>Web Designer In-Training</h5>
+				</div>
+			</div>
+		</section>
+
+		<article id="projects">
+			<section class="large">
+				<img src="http://placehold.it/200" alt="project pic">
+				<h2>Mission Community Outreach Center</h2>
+				<h4>Software Design and Database Management</h4>
+			</section>
+			<section class="small">
+				<img src="http://placehold.it/200" alt="project pic">
+				<h2>Open Source Automotive POS</h2>
+				<h4>Software Design and Database Management</h4>
+			</section>
+			<section class="small">
+				<img src="http://placehold.it/200" alt="project pic">
+				<h2>Northwest Automotive Website Overhaul</h2>
+				<h4>Front-End Web Design</h4>
+			</section>
+			<section class="large">
+				<img src="http://placehold.it/200" alt="project pic">
+				<h2>Computer Security Website and Quiz</h2>
+				<h4>Full Stack Web Design</h4>
+			</section>
+		</article>
+
+		<article id="experience">
+			<h1>My Experience</h1>
+			<h3>I'll be graduating Spring of 2020 with my Bachelors in
+				Computer Science and some background in Management
+				Information Systems as well as UX and Web Design.
+			</h3>
+			<section id="work">
+				<section>
+					<h2>FAST Enterprises</h2>
+					<h4>Implementation Consultant Intern</h4>
+					<h5>June 2019 - September 2019</h5>
+				</section>
+				<section>
+					<h2>Eastern Washington University</h2>
+					<h4>Tutor & Teaching Assistant</h4>
+					<h5>Fall 2018 - Current</h5>
+				</section>
+				<section>
+					<h2>work</h2>
+					<h4>title</h4>
+					<h5>time worked</h5>
+				</section>
+			</section>
+		</article>
+
+		<p>I'm 22 and in my last year (hopefully) at Eastern Washington University
+			getting a degree in Computer Science with a major in Management Information
+			Systems. I'm hoping to go into front-end web development in the future if
+			possible. I really like animals and have a tiny zoo going on in my room as
+			I've a snake, two geckos, a lizard, and a bird.</p>
+		<p>Descriptors</p>
+		<ul>
+			<li>Coffee Addict</li>
+			<li>Travel Lover</li>
+			<li>Low-Key Animal Hoarder (but not really)</li>
+			<li>Doesn't understand time</li>
+			<li>Just straight vibin'</li>
+		</ul>
+	</main>
+
+	<footer>
+		<a href="./README.md">Read Me!</a>
+	</footer>
+
+</body>
 
 </html>
