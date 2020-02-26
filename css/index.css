@@ -2,8 +2,9 @@
  * index.scss
  * any styles you want here!
  */
- @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+ @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+ @import url('https://fonts.googleapis.com/css?family=Lato');
+ @import url("https://fonts.googleapis.com/css?family=VT323");
 :root {
 	--color-primary: #556B2F;
 	--color-secondary: #D1AA24;
@@ -12,163 +13,208 @@
 	--color-light: #fff;
 	--font-primary: "PT Sans";
 	--font-secondary: "Lato";
+	--font-pokemon: "VT323";
 }
+
+/*        M A I N           */
 
 body {
-	background: var(--color-light);
-	font-family: var(--font-secondary);
-	text-align: center;
-	width: 95%;
-	color: var(--color-dark);
-	margin: 0;
-	overflow-x: hidden;
-}
+	background: linear-gradient(165deg, var(--color-secondary), #794810);
+	height: 100vh;
+	overflow: hidden;
 
-header {
 	display: flex;
-	flex-direction: row;
-}
-
-nav {
-	align-self: center;
-	margin-left: auto;
-}
-
-nav a {
-	color: var(--color-primary);
-	font-weight: bold;
-	text-decoration: none;
-	padding: 0 1em;
 }
 
 main {
-	display: block;
-}
-
-#heroBanner {
-	background-color: var(--color-primary);
+	border: 10px solid black;
 	border-radius: 1em;
-	max-width: 70em;
-	margin: 5em auto;
+	background: lightgrey;
+	height: 22em;
+	width: 40em;
+	margin: auto;
+
+	position: relative;
 }
 
-#heroBanner h1 {
-	color: var(--color-light);
-	font-family: var(--font-primary);
-	font-size: 3em;
-	padding: 1em;
-	text-align: left;
-	font-weight: lighter;
+
+
+/*     Name Area      */
+.title {
+	/* Styling */
+	background: linear-gradient(
+		grey 0%,
+		grey 50%,
+		lightgrey 52%,
+		lightgrey 100%
+	);
+	font-family: VT323;
+	font-size: 1.5em;
+	border: 5px solid black;
+	border-left: none;
+	border-radius: 0 .3em .3em 0;
+	box-shadow: .05em .1em .15em #555;
+
+	/* Mechanics */
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-#picAndName {
+#upper {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
-	margin: 1em;
-	padding: 1em;
-	padding-bottom: 2em;
+	height: 25px;
+	
+	color: white;
+	text-shadow: .05em .05em .05em #333333;
 }
 
-#words {
-	margin-left: 1em;
-	display: flex;
-	flex-direction: column;
-	justify-items: flex-start;
-	color: var(--color-light);
-	font-family: var(--font-primary);
+#upper p {
+	padding-right: 50px;
 }
 
-#words h3 {
-	font-size: 1.8em;
-	margin-bottom: .25em;
+#lower {
+	display: inline-block;
+	height: 25px;
+	padding-left: 20px;
+	text-shadow: .05em .05em .05em #bfbfbf;
 }
 
-#words h5 {
-	font-weight: normal;
-	font-size: 1em;
-	margin-top: .25em;
-	color: rgb(218, 214, 214);
-}
 
-#projects {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	max-width: 70em;
-	margin: 5em auto;
-}
 
-#projects section {
-	/* testing css */
+/*     Nav Bar       */
+.nav {
+	/* Styling */
+	color: white;
 	background: var(--color-tertiary);
-	color: var(--color-light);
-	margin: .5em;
-	padding: 1em;
-}
+	border: 4px solid grey;
+	border-left: none;
+	border-right: none;
+	font-family: VT323;
+	font-size: 1.2em;
+	width: 25em;
 
-#experience {
-	background: var(--color-primary);
-	color: var(--color-light);
-	border-radius: 1em;
-	max-width: 70em;
-	margin: 5em auto;
-	padding: 1em;
-}
-
-#work {
+	/* Mechanics */
 	display: flex;
+	position: absolute;
+	right: 0;
+	margin-top: 1em;
 	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	padding: 0 .5em;
 }
 
-#work section {
-	width: 30%;
-	margin: .1em;
-	background: var(--color-tertiary);
-}
-
-.large {
-	flex-grow: 2;
-}
-
-
-li {
-	list-style: none;
+.nav div {
+	padding: .2em;
+	background: grey;
+	margin: .2em .1em;
+	width: 3.5em;
 	text-align: center;
+	transition: background-color 0.5s ease;
 }
 
-#selfie {
-	height: 14em;
-	border-radius: 50%;
+.nav div:hover {
+	background: darkgrey;
+	transition: background-color 0.5s ease;
 }
 
-#logo {
-	height: 5em;
+
+
+/*     My Sprite      */
+
+#me {
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 
-footer {
-	display: block;
-	background: var(--color-tertiary);
-	color: var(--color-light);
-	padding: 2em;
-	width: 100%;
+
+
+/*     Info Area      */
+
+#char_table {
+	/* Styling */
+	font-family: VT323;
+	font-size: 1.5em;
+	grid: .1em white;
+	background: none;
+	border: 18px solid black;
+	border-image:
+		url("https://i.ibb.co/yRyTHkx/borderimg.png") 27 stretch;
+	border-radius: .3em;
+	width: 350px;
+	background: lightgrey;
+
+	/* Mechanics */
+	display: grid;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	grid-template-columns: 150px 200px;
+	grid-template-rows: auto; 
 }
 
-footer a {
-	color: var(--color-light);
-	text-decoration: none;
-	margin: 1.5em 1em;
-	padding: .5em 1em;
-	border-radius: .25em;
+#char_table div {
+	padding: .2em;
 }
 
-footer a:hover {
-	color: var(--color-secondary);
-	font-weight: bold;
-	background: var(--color-light);
+/* left side */
+#char_table > div:nth-child(2n+1){
+	background: grey;
+	color: white;
+	text-shadow: .05em .05em .05em #333333;
+}
+
+/* right side */
+#char_table > div:nth-child(2n){
+	background: lightgrey;
+	color: black;
+	text-shadow: .05em .05em .05em #bfbfbf;
+	text-align: center;
+	
+}
+
+/* evens on left */
+#char_table > div:nth-child(4n+1){
+	background: darkgrey;
+}
+
+/* evens on right */
+#char_table > div:nth-child(4n){
+	background: darkgrey;
+}
+
+
+
+
+
+/*      TYPING        */
+#char_table .type {
+	font-family: VT323;
+	font-size: .8em;
+	margin: .2em;
+	padding: .1em .4em;
+	width: 4em;
+	text-align: center;
+	margin: auto;
+	border-radius: 20px;
+	border: .1em solid white;
+	box-shadow: 0 .1em .05em #5a5b60;
+}
+
+#char_table #designer {
+	color: white;
+	text-shadow: none;
+	background: linear-gradient(0deg, rgba(195,34,34,1) 0%, rgba(82,15,15,1) 50%, rgba(195,34,34,1) 100%);
+}
+
+#char_table #programmer {
+	color: white;
+	text-shadow: none;
+	background: linear-gradient(0deg, rgba(143,162,246,1) 0%, rgba(77,98,194,1) 50%, rgba(143,162,246,1) 100%);
 }
