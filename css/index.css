@@ -1,13 +1,14 @@
 /*
- * index.scss
+ * index.css
  * any styles you want here!
  */
- @import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
- @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 :root {
 	--color-primary: #556B2F;
 	--color-secondary: #D1AA24;
- 	--color-tertiary: #251E24;
+	--color-tertiary: #251E24;
 	--color-dark: #352C27;
 	--color-light: #fff;
 	--font-primary: "PT Sans";
@@ -22,23 +23,44 @@ body {
 	color: var(--color-dark);
 	margin: 0;
 	overflow-x: hidden;
-}
-
-header {
-	display: flex;
-	flex-direction: row;
+	max-width: 70em;
 }
 
 nav {
-	align-self: center;
+	/* Styling */
+
+	/* Mechanics */
+	display: flex;
+	flex-direction: row;
+	justify-items: flex-end;
+	
+	align-items: center;
 	margin-left: auto;
 }
 
 nav a {
+	/* Styling */
 	color: var(--color-primary);
 	font-weight: bold;
 	text-decoration: none;
-	padding: 0 1em;
+	padding: .3em 1em;
+	border-radius: .25em;
+
+	/* Mechanics */
+	transition: flex-grow 0.5s ease;
+	flex-grow: 1;
+}
+
+nav a:not(:first-child):hover {
+	/* Styling */
+	background: var(--color-tertiary);
+	color: var(--color-light);
+	text-decoration: none;
+	font-weight: bold;
+
+	/* Mechanics */
+	transition: flex-grow 0.5s ease;
+	flex-grow: 3;
 }
 
 main {
@@ -48,7 +70,6 @@ main {
 #heroBanner {
 	background-color: var(--color-primary);
 	border-radius: 1em;
-	max-width: 70em;
 	margin: 5em auto;
 }
 
@@ -98,7 +119,6 @@ main {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	max-width: 70em;
 	margin: 5em auto;
 }
 
@@ -114,7 +134,6 @@ main {
 	background: var(--color-primary);
 	color: var(--color-light);
 	border-radius: 1em;
-	max-width: 70em;
 	margin: 5em auto;
 	padding: 1em;
 }
