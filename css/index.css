@@ -24,6 +24,8 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 	max-width: 70em;
+	display: flex;
+	flex-direction: column;
 }
 
 nav {
