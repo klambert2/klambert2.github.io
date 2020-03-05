@@ -1,5 +1,5 @@
 /**
- * index.js
+ * scripts.js
  * - All our useful JS goes here, awesome!
  */
 
