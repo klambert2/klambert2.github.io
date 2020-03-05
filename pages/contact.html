@@ -2,47 +2,50 @@
 <html lang="en">
 
 <head>
-	<!--  Meta  -->
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contact Kayla</title>
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Kayla</title>
 
-	<!--  Styles  -->
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/form.css">
+  <!--  Styles  -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/form.css">
 
-	<!-- Scripts -->
-	<script src="./js/scripts.js"></script>
 </head>
 
 
 <body>
 
-    <form name="Contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>   
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Contact Reasoning: <select name="role[]" multiple>
-            <option value="site">Need a site</option>
-            <option value="chat">Want to chat</option>
-            <option value="question">Have a question</option>
-          </select></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-            <label>Upload File: <input type="file" name="file"></label>
-        </p>
-        <div data-netlify-recaptcha="true"></div>
-        <p>
-          <button id="btn_submit" type="submit">Send</button>
-        </p>
-      </form>
+  <form name="Contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+    <p>
+      <label>Your Name: <input type="text" name="name" /></label>
+    </p>
+    <p>
+      <label>Your Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <label>Contact Reasoning: <select name="role[]" multiple>
+          <option value="site">Need a site</option>
+          <option value="chat">Want to chat</option>
+          <option value="question">Have a question</option>
+        </select></label>
+    </p>
+    <p>
+      <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+      <label>Upload File: <input type="file" name="file"></label>
+    </p>
+    <div data-netlify-recaptcha="true"></div>
+    <p>
+      <button id="btn_submit" type="submit">Send</button>
+    </p>
+  </form>
+
+
+
+  <!-- Scripts -->
+  <script src="../js/scripts.js"></script>
 
 </body>
 
