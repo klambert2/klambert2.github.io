@@ -6,7 +6,10 @@
 	--color-secondary: #D1AA24;
 	--color-tertiary: #251E24;
 	--color-dark: #352C27;
-	--color-light: #fff;
+    --color-light: #fff;
+    
+    --gradient-green: linear-gradient(150deg, #556B2F, #314117);
+
 	--font-primary: "PT Sans";
 	--font-secondary: "Lato";
 }
@@ -23,7 +26,7 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    background: var(--color-primary);
+    background: var(--gradient-green);
     border-radius: 15px;
     color: var(--color-light);
     padding: 20px;
