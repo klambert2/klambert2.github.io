@@ -46,10 +46,10 @@ I'm 22 and in my last year (hopefully) at Eastern Washington University getting 
 
 
 # Vivarium Google Doodle
-50+ words about your google doodle
+My google doodle is based on my pet snake's vivarium that I designed for him.  He's a ball python and I plan to have him pop his head up on either side of the vivarium throughout the animation.  I also plan to have the different plants waving throughout it here and there along with the mister system come on and "mist" the tank.  The words Google can be found in the shape of light that's coming down from his tank lighting.  I plan to have it fade stronger and weaker, maybe mildy scaling here and there to mimick a slightly flickering-like light.
 
 ## Collage
-[Link to Figma collage] (link)
+[Link to Figma collage] (https://www.figma.com/file/0qqDO5gltz22y2wPr9gZCN/Google-Doodle-Collage?node-id=0%3A1)
 
 ## Resoures
-* [Source of SVG] (link)
+* [Source of SVG] (https://fonts.adobe.com/fonts/myriad)
